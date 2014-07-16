@@ -4,29 +4,39 @@
 # 2. Count the number of times a word is used
 # 3. Print the word used the most
 
-tweets = ["@nusco @camerondaigle Does this civilization have considerably larger seat dimensions for their space planes?  If no, then I can't agree. ;)",
-"Early on, even great user interfaces suck wp.me/p4LE2l-12",
-"What, Atom doesn't have alt+drag to do multi-line cursors? oO"]
+loop do
+  puts "Please enter three tweets:"
 
-words = tweets.map do |tweet|
+  tweets = []
+  3.times do
+    tweets << gets.strip
+  end
+
+  words = tweets.map do |tweet|
     # creates an array of words
-	tweet.split
-	# implicit return to map
-end.flatten
+    tweet.split
+    # implicit return to map
+  end.flatten
 
-word_count = Hash.new { 0 }
+  word_count = Hash.new { 0 }
 
-words.each do |word|
-	word_count[word] += 1
+  words.each do |word|
+    # word = "@nusco"
+    word_count[word] += 1
+  end
+
+  most_frequent = ""
+    max_frequency = 0
+    word_count.each do |word, value|
+    if max_frequency < word_count[word]
+        max_frequency = word_count[word]
+        most_frequent = word
+    end
+  end
+
+  puts "Most used word: #{most_frequent} -- used #{max_frequency} times"
+
+  puts "Want to do it again? (Y/N)"
+
+  break unless gets.strip.downcase == "y"
 end
-
-most_frequent = ""
-max_frequency = 0
-word_count.each do |key, value|
-	if max_frequency < word_count[key]
-		max_frequency = word_count[key]
-		most_frequent = key
-	end
-end
-
-puts most_frequent
