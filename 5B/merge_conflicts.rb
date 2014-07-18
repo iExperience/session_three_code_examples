@@ -2,6 +2,6 @@ class MergeConflicts
 
   def conflict
     # here is a comment
-    "conflicting line"
+    "new conflicting line"
   end
 end
