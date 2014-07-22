@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer          not null, primary key
+#  handle     :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
