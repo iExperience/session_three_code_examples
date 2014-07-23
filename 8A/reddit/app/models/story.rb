@@ -1,29 +1,14 @@
-class Story
-
-  attr_reader :data
-
-  def initialize(reddit)
-    @data = reddit
-  end
+class Story < ActiveRecord::Base
 
   def self.first(n)
     url = "http://www.reddit.com/top.json?limit=#{n}"
     response = RestClient.get url
     json_hash = JSON.parse(response)
-    json_hash["data"]["children"].map do |reddit|
-      Story.new(reddit)
+    json_hash["data"]["children"].map do |data|
+      story = Story.where(
+        :title => data["data"]["title"],
+        :url => data["data"]["url"]
+      ).first_or_create
     end
-  end
-
-  def title
-    data["data"]["title"]
-  end
-
-  def url
-    data["data"]["url"]
-  end
-
-  def body
-    data["data"]["body"]
   end
 end
