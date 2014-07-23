@@ -1,0 +1,11 @@
+<h1>Latest Reddit's</h1>
+
+<ul>
+  <% @reddits.each do |reddit| %>
+    <li>
+      <p>
+        <%= reddit.title %>
+      </p>
+    </li>
+  <% end %>
+</ul>
