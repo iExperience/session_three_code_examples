@@ -1,0 +1,33 @@
+<h1>Listing users</h1>
+
+<%= form_tag users_path, method: :get do %>
+  <h6>This is a form that updates the first user</h6>
+  <label>Search</label>
+  <%= text_field_tag :q, params[:q] %>
+
+  <input type='submit' value='Go find it' />
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Handle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.handle %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
