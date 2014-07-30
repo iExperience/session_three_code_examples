@@ -1,0 +1,39 @@
+<h1>Listing tweets</h1>
+
+<%= content_for :search do %>
+  <%= form_tag tweets_path(params[:handle]), method: :get, class: "navbar-form navbar-left pull-right" do %>
+    <div class="form-group">
+      <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Search Tweets" %>
+    </div>
+  <% end %>
+<% end %>
+
+<% if @user.images.any? %>
+  <%= image_tag @user.images.first.attachment.url(:thumb) %>
+<% end %>
+
+<%= form_for @new_tweet, url: tweets_path(params[:handle]) do |f| %>
+  <%= f.label :content, "Tweet about it!" %>
+  <%= f.text_field :content %>
+<% end %>
+
+<%= render 'follow' %>
+
+
+
+<ul class='tweets'>
+  <% @tweets.each do |tweet| %>
+    <li class='well'>
+      <% if admin? %>   
+        <%= link_to "x", destroy_tweet_path(tweet), method: :delete, class: "close" %>
+      <% end %>
+      <span>@<%= tweet.user.handle %></span>
+      <p><%= tweet.content %></p>
+    </li>
+  <% end %>
+
+  <% unless display_all? %>
+    <%= paginate @tweets %>
+  <% end %>
+</ul>
+
