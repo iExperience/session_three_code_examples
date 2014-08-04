@@ -1,0 +1,16 @@
+<h1>Listing tweets</h1>
+
+<%= render 'search' %>
+
+<% if @user.images.any? %>
+  <%= image_tag @user.images.first.attachment.url(:thumb) %>
+<% end %>
+
+<%= form_for @new_tweet, url: tweets_path(params[:handle]) do |f| %>
+  <%= f.label :content, "Tweet about it!" %>
+  <%= f.text_field :content %>
+<% end %>
+
+<%= render 'follow' %>
+
+<%= render 'tweets' %>

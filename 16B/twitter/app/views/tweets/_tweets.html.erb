@@ -1,0 +1,15 @@
+<ul class='tweets', id='tweets'>
+  <% @tweets.each do |tweet| %>
+    <li class='well'>
+      <% if admin? %>   
+        <%= link_to "x", destroy_tweet_path(tweet), method: :delete, class: "close", remote: true %>
+      <% end %>
+      <span>@<%= tweet.user.handle %></span>
+      <p><%= tweet.content %></p>
+    </li>
+  <% end %>
+
+  <% unless display_all? %>
+    <%= paginate @tweets %>
+  <% end %>
+</ul>

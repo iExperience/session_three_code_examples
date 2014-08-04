@@ -1,0 +1,6 @@
+.pull-right
+  - if current_user.following?(@user)
+    - friendship = current_user.following?(@user)
+    = link_to "Unfollow", friendship_path(friendship.id), method: :delete
+  - else
+    = link_to "Follow", friendships_path(params: {user_id: current_user.id, friend_id: @user.id}), method: :post
