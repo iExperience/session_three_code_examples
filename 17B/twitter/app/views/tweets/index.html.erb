@@ -1,0 +1,28 @@
+<h1>Listing tweets</h1>
+
+<%= render 'search' %>
+
+<% if current_user.stripe_account %>
+  <%= link_to "Pay 5 bucks for a month", payments_path, method: :post %>
+
+  <%= link_to "Change Payment Method", cards_path %>
+<% else %>
+  <%= link_to "Add a payment method", cards_path %>
+<% end %>
+
+<% if @user.images.any? %>
+  <%= image_tag @user.images.first.attachment.url(:thumb) %>
+<% end %>
+
+<%= form_for @new_tweet, url: tweets_path(params[:handle]) do |f| %>
+  <%= f.label :content, "Tweet about it!" %>
+  <%= f.text_area :content %>
+  <%= f.submit class: "btn btn-primary" %>
+  <p>
+    <span id="tweet_counter" class="success">140</span>
+  </p>
+<% end %>
+
+<%= render 'follow' %>
+
+<%= render 'tweets' %>

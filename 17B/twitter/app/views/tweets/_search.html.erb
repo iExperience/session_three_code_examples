@@ -1,0 +1,7 @@
+<%= content_for :search do %>
+  <%= form_tag tweets_path(params[:handle]), method: :get, class: "navbar-form navbar-left pull-right", id: "tweets_search" do %>
+    <div class="form-group">
+      <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Search Tweets" %>
+    </div>
+  <% end %>
+<% end %>
