@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_PATH	/Users/mwoods/hashrocket/ix/examples/17B/twitter/bin/rails	/^APP_PATH = File.expand_path('..\/..\/config\/application',  __FILE__)$/;"	c
+ActiveSupport	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddAttachmentAvatarToUsers	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730122506_add_attachment_avatar_to_users.rb	/^class AddAttachmentAvatarToUsers < ActiveRecord::Migration$/;"	c
+AddDeviseToUsers	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140728124116_add_devise_to_users.rb	/^class AddDeviseToUsers < ActiveRecord::Migration$/;"	c
+AddRoleToUser	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140729090901_add_role_to_user.rb	/^class AddRoleToUser < ActiveRecord::Migration$/;"	c
+Application	/Users/mwoods/hashrocket/ix/examples/17B/twitter/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Twitter
+ApplicationController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CardError	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/payments_controller.rb	/^  rescue Stripe::CardError => e$/;"	c
+CardsController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/cards_controller.rb	/^class CardsController < ApplicationController$/;"	c
+Chart	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/chart.rb	/^class Chart$/;"	c
+CreateFollowings	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140725092050_create_followings.rb	/^class CreateFollowings < ActiveRecord::Migration$/;"	c
+CreateFreindships	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140725093753_create_freindships.rb	/^class CreateFreindships < ActiveRecord::Migration$/;"	c
+CreateImages	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730125807_create_images.rb	/^class CreateImages < ActiveRecord::Migration$/;"	c
+CreateStripeAccounts	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140805082313_create_stripe_accounts.rb	/^class CreateStripeAccounts < ActiveRecord::Migration$/;"	c
+CreateTweets	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140721112630_create_tweets.rb	/^class CreateTweets < ActiveRecord::Migration$/;"	c
+CreateUsers	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140721111944_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Friendship	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/friendship.rb	/^class Friendship < ActiveRecord::Base$/;"	c
+FriendshipMailer	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/mailers/friendship_mailer.rb	/^class FriendshipMailer < ActionMailer::Base$/;"	c
+FriendshipMailerPreview	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/mailers/previews/friendship_mailer_preview.rb	/^class FriendshipMailerPreview < ActionMailer::Preview$/;"	c
+FriendshipMailerTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/mailers/friendship_mailer_test.rb	/^class FriendshipMailerTest < ActionMailer::TestCase$/;"	c
+FriendshipsController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/friendships_controller.rb	/^class FriendshipsController < ApplicationController$/;"	c
+Image	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/image.rb	/^class Image < ActiveRecord::Base$/;"	c
+MapsController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/maps_controller.rb	/^class MapsController < ApplicationController$/;"	c
+PaymentsController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/payments_controller.rb	/^class PaymentsController < ApplicationController$/;"	c
+RemoveAvatarFromUsers	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730125949_remove_avatar_from_users.rb	/^class RemoveAvatarFromUsers < ActiveRecord::Migration$/;"	c
+StripeAccount	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/stripe_account.rb	/^class StripeAccount < ActiveRecord::Base$/;"	c
+StripeCardsService	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_cards_service.rb	/^class StripeCardsService$/;"	c
+StripePaymentService	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_payment_service.rb	/^class StripePaymentService$/;"	c
+Tweet	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^class Tweet < ActiveRecord::Base$/;"	c
+TweetTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/models/tweet_test.rb	/^class TweetTest < ActiveSupport::TestCase$/;"	c
+TweetsController	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^class TweetsController < ApplicationController$/;"	c
+TweetsControllerTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/controllers/tweets_controller_test.rb	/^class TweetsControllerTest < ActionController::TestCase$/;"	c
+TweetsHelper	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/helpers/tweets_helper.rb	/^module TweetsHelper$/;"	m
+TweetsHelperTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/helpers/tweets_helper_test.rb	/^class TweetsHelperTest < ActionView::TestCase$/;"	c
+Twitter	/Users/mwoods/hashrocket/ix/examples/17B/twitter/config/application.rb	/^module Twitter$/;"	m
+User	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserDecorator	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/decorators/user_decorator.rb	/^class UserDecorator$/;"	c
+UserTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UsersControllerTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/controllers/users_controller_test.rb	/^class UsersControllerTest < ActionController::TestCase$/;"	c
+UsersHelper	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+UsersHelperTest	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/helpers/users_helper_test.rb	/^class UsersHelperTest < ActionView::TestCase$/;"	c
+admin?	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def admin?$/;"	f	class:TweetsController
+admin?	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  def admin?$/;"	f	class:User
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140721111944_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140721112630_create_tweets.rb	/^  def change$/;"	f	class:CreateTweets
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140725092050_create_followings.rb	/^  def change$/;"	f	class:CreateFollowings
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140725093753_create_freindships.rb	/^  def change$/;"	f	class:CreateFreindships
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140729090901_add_role_to_user.rb	/^  def change$/;"	f	class:AddRoleToUser
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730122506_add_attachment_avatar_to_users.rb	/^  def change$/;"	f	class:AddAttachmentAvatarToUsers
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730125807_create_images.rb	/^  def change$/;"	f	class:CreateImages
+change	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140805082313_create_stripe_accounts.rb	/^  def change$/;"	f	class:CreateStripeAccounts
+chart	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def chart$/;"	f	class:TweetsController
+configure_permitted_parameters	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/application_controller.rb	/^  def configure_permitted_parameters$/;"	f	class:ApplicationController
+create	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/cards_controller.rb	/^  def create$/;"	f	class:CardsController
+create	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/friendships_controller.rb	/^  def create$/;"	f	class:FriendshipsController
+create	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/payments_controller.rb	/^  def create$/;"	f	class:PaymentsController
+create	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def create$/;"	f	class:TweetsController
+create!	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_payment_service.rb	/^  def create!(amount)$/;"	f	class:StripePaymentService
+create_chart	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/chart.rb	/^  def create_chart$/;"	f	class:Chart
+create_for_user	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^  def self.create_for_user(user, params)$/;"	F	class:Tweet
+customer	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_cards_service.rb	/^  def customer$/;"	f	class:StripeCardsService
+customer_id	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_cards_service.rb	/^  def customer_id$/;"	f	class:StripeCardsService
+customer_id	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_payment_service.rb	/^  def customer_id$/;"	f	class:StripePaymentService
+default	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/cards_controller.rb	/^  def default$/;"	f	class:CardsController
+destroy	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/friendships_controller.rb	/^  def destroy$/;"	f	class:FriendshipsController
+destroy	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def destroy$/;"	f	class:TweetsController
+display_all?	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def display_all?$/;"	f	class:TweetsController
+down	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140728124116_add_devise_to_users.rb	/^  def self.down$/;"	F	class:AddDeviseToUsers
+down	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730125949_remove_avatar_from_users.rb	/^  def down$/;"	f	class:RemoveAvatarFromUsers
+following?	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  def following?(other_user)$/;"	f	class:User
+for_user	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^  def self.for_user(handle)$/;"	F	class:Tweet
+friend	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/friendship.rb	/^  belongs_to :friend, :class_name => "User",$/;"	f
+friends	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  has_many :friends, :through => :friendships$/;"	f
+friendship_email	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/mailers/friendship_mailer.rb	/^  def friendship_email(friendship)$/;"	f	class:FriendshipMailer
+friendship_email	/Users/mwoods/hashrocket/ix/examples/17B/twitter/test/mailers/previews/friendship_mailer_preview.rb	/^  def friendship_email$/;"	f	class:FriendshipMailerPreview
+friendships	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  has_many :friendships$/;"	f
+handle	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/decorators/user_decorator.rb	/^  def handle$/;"	f	class:UserDecorator
+image	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^  has_one :image, as: :imageable$/;"	f
+imageable	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/image.rb	/^  belongs_to :imageable, polymorphic: true$/;"	f
+images	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  has_many :images, as: :imageable$/;"	f
+index	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/cards_controller.rb	/^  def index$/;"	f	class:CardsController
+index	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/maps_controller.rb	/^  def index$/;"	f	class:MapsController
+index	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def index$/;"	f	class:TweetsController
+initialize	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/decorators/user_decorator.rb	/^  def initialize(user_model)$/;"	f	class:UserDecorator
+initialize	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/chart.rb	/^  def initialize(user)$/;"	f	class:Chart
+initialize	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_cards_service.rb	/^  def initialize(user)$/;"	f	class:StripeCardsService
+initialize	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_payment_service.rb	/^  def initialize(user, stripe_token)$/;"	f	class:StripePaymentService
+method_missing	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/decorators/user_decorator.rb	/^  def method_missing(name)$/;"	f	class:UserDecorator
+new	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/payments_controller.rb	/^  def new$/;"	f	class:PaymentsController
+search	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^  def self.search(query)$/;"	F	class:Tweet
+search	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  def self.search(query)$/;"	F	class:User
+send_friendship_email	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/friendship.rb	/^  def send_friendship_email$/;"	f	class:Friendship
+stripe_account	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  has_one :stripe_account$/;"	f
+stripe_account	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/services/stripe_cards_service.rb	/^  def stripe_account$/;"	f	class:StripeCardsService
+tweet_params	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/controllers/tweets_controller.rb	/^  def tweet_params$/;"	f	class:TweetsController
+tweets	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/user.rb	/^  has_many :tweets, :dependent => :destroy$/;"	f
+up	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140728124116_add_devise_to_users.rb	/^  def self.up$/;"	F	class:AddDeviseToUsers
+up	/Users/mwoods/hashrocket/ix/examples/17B/twitter/db/migrate/20140730125949_remove_avatar_from_users.rb	/^  def up$/;"	f	class:RemoveAvatarFromUsers
+user	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/friendship.rb	/^  belongs_to :user$/;"	f
+user	/Users/mwoods/hashrocket/ix/examples/17B/twitter/app/models/tweet.rb	/^  belongs_to :user # tweets table has a user_id$/;"	f
