@@ -6,7 +6,7 @@
 #  handle                 :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
-#  email                  :string(255)      default(""), not null
+#  email                   :string(255)      default(""), not null
 #  encrypted_password     :string(255)      default(""), not null
 #  reset_password_token   :string(255)
 #  reset_password_sent_at :datetime
@@ -26,7 +26,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable, :omniauthable,
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :tweets, :dependent => :destroy
@@ -52,6 +52,25 @@ class User < ActiveRecord::Base
 
   def following?(other_user)
     friendships.find_by(friend_id: other_user.id)
+  end
+
+  def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
+    user = User.where(:provider => auth.provider, :uid => auth.uid).first
+    if user
+      return user
+    else
+      registered_user = User.where(:email => auth.info.email).first
+      if registered_user
+        return registered_user
+      else
+        user = User.create( handle: auth.info.last_name,
+                            provider: auth.provider,
+                            uid: auth.uid,
+                            email: auth.info.email,
+                            password: Devise.friendly_token[0,20]
+                          )
+      end    
+    end
   end
 
 end

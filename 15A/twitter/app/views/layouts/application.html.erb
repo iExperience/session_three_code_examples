@@ -58,6 +58,10 @@
     <div class="row">
       <div class="span9">
         <%= bootstrap_flash %>
+        <% if user_signed_in? %>
+        You are logged in as <%= current_user.email %>
+        <%= image_tag "http://graph.facebook.com/#{current_user.uid}/picture?type=large" %>  
+        <% end %>
         <%= yield %>
       </div>
 

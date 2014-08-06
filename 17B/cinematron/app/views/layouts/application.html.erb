@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cinematron</title>
+		<%= stylesheet_link_tag    'application', media: 'all' %>
+		<%= javascript_include_tag 'application' %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<br>
+		<div class="container">
+			<% if flash[:notice] %>
+			<div class="alert alert-success"><%= flash[:notice] %></div>
+			<% end %>
+			<% if flash[:alert] %>
+			<div class="alert alert-danger"><%= flash[:alert] %></div>
+			<% end %>
+			<%= yield %>
+			<% if user_signed_in? %>
+			<div id="profile">
+				<div><%= image_tag "https://graph.facebook.com/#{current_user.uid}/picture?type=normal", id: 'profile_pic' %></div>
+				<br>
+				<div id="info">
+					<h4>Signed in as <%= current_user.full_name %></h4>
+					<%= current_user.email %>
+				</div>		
+			</div>
+			<div><%= link_to 'Log Out', destroy_user_session_path, method: 'delete' %>	</div>
+			<% end %>
+		</div>
+	</body>
+</html>

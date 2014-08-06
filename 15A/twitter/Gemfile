@@ -47,3 +47,8 @@ gem 'devise'
 gem 'ffaker'
 gem 'kaminari'
 gem 'paperclip'
+
+gem 'omniauth'
+gem 'omniauth-facebook' 
+
+
